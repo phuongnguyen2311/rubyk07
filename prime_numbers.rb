@@ -1,7 +1,7 @@
 def is_prime?(n)
   return false if n <= 1
 
-  (2..n-1).each do |i|
+  (2..Math.sqrt(n).to_i).each do |i|
     return false if n % i == 0
   end
 

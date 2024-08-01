@@ -1,10 +1,5 @@
 def leap_year(year)
-  return true if (year % 4).zero? && (year % 100).nonzero?
-
-  if (year % 4).zero? && (year % 100).zero?
-    return true if (year % 400).zero?
-  end
-  false
+  year % 4 == 0 && year % 100 != 0 || year % 400 == 0
 end
 
 def check_leap_year
