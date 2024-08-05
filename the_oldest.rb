@@ -21,7 +21,8 @@ class Student
     puts "Company: #{oldest_student[:company]}"
    end
  end
-  a = Student.new
+
+ a = Student.new
  a.push({ name: "Nguyen Van Phuong", age: 32, company: "Neolab" })
  a.push({ name: "Dau Cong Giap", age: 24, company: "Neolab" })
  a.push({ name: "Tran Huu Thang", age: 25, company: "Neolab" })
