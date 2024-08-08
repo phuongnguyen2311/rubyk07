@@ -1,23 +1,18 @@
-
-def cal_factorial (n)
+def cal_factorial(n)
+  return nil if n == 0
 
   factorial = 1
+  counter = 1
 
-  if n == 0
-    return nil
-  else
-    counter = 1
-    while n >= counter
-      factorial *= counter
-      counter += 1
-    end
+  while n >= counter
+    factorial *= counter
+    counter += 1
   end
 
   factorial
 end
 
-
-p 'Enter number: '
+puts 'Enter number:'
 n = gets.chomp.to_i
 result = cal_factorial(n)
 
