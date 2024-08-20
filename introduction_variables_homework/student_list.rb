@@ -11,7 +11,7 @@ class Student
  end
 end
 
-# Tạo danh sách 5 học sinh
+
 students = [
  Student.new(1, "NTA", 20, 2001),
  Student.new(2, "NTB", 20, 2001)
