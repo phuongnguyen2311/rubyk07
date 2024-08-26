@@ -1,15 +1,6 @@
 def cal_factorial(n)
-  return nil if n == 0
-
-  factorial = 1
-  counter = 1
-
-  while n >= counter
-    factorial *= counter
-    counter += 1
-  end
-
-  factorial
+   return 1 if [0,1].include?(n)
+   n*cal_factorial(n - 1)
 end
 
 puts 'Enter number:'
