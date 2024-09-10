@@ -17,24 +17,9 @@ class Square < Box
   def initialize(side_length)
     super(side_length, side_length)
   end
-
-  def square_area
-    area
-  end
-
-  def square_perimeter
-    perimeter
-  end
 end
 
 class Rectangle < Box
-  def rectangle_area
-    area
-  end
-
-  def rectangle_perimeter
-    perimeter
-  end
 end
 
 class Circle
@@ -53,12 +38,12 @@ end
 
 
 square = Square.new(5)
-puts "Diện tích hình vuông: #{square.square_area}"
-puts "Chu vi hình vuông: #{square.square_perimeter}"
+puts "Diện tích hình vuông: #{square.area}"
+puts "Chu vi hình vuông: #{square.perimeter}"
 
 rectangle = Rectangle.new(4, 6)
-puts "Diện tích hình chữ nhật: #{rectangle.rectangle_area}"
-puts "Chu vi hình chữ nhật: #{rectangle.rectangle_perimeter}"
+puts "Diện tích hình chữ nhật: #{rectangle.area}"
+puts "Chu vi hình chữ nhật: #{rectangle.perimeter}"
 
 circle = Circle.new(3)
 puts "Diện tích hình tròn: #{circle.circle_area}"
