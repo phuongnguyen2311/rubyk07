@@ -1,8 +1,6 @@
 def check_repeated_digits(number)
-  digits = number.to_s.split('').map(&:to_i)
-
-  unique_digits = digits.uniq
-  return unique_digits.length == 1
+  digits = number.to_s.chars
+  digits.uniq.size == 1
 end
 
 number_to_check = 557
